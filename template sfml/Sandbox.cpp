@@ -4,21 +4,15 @@
 
 int main()
 {
-    printf("test");
-
-
-
-
-
     srand(static_cast <unsigned> (time(0)));
 
-    sf::RenderWindow window(sf::VideoMode(1080, 720), "SFML works!");
+    sf::RenderWindow window(sf::VideoMode(1920, 1080), "SFML works!");
 
-    sf::Vector2f sizeParticle(6.f, 6.f);
+    sf::Vector2f sizeParticle(5.f, 5.f);
     Grid grid(sizeParticle, window.getSize());
 
     int selector{ int(Type::Sand) };
-    int nbType{ 5 }; // TENIR A JOUR
+    int nbType{ 6 }; // TENIR A JOUR
     int fps{ 0 };
     sf::Clock fpsClock;
     sf::Font font;
