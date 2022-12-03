@@ -6,7 +6,7 @@ int main()
 {
     srand(static_cast <unsigned> (time(0)));
 
-    sf::RenderWindow window(sf::VideoMode(1920, 1080), "SFML works!");
+    sf::RenderWindow window(sf::VideoMode(2560, 1080), "SFML works!");
 
     sf::Vector2f sizeParticle(5.f, 5.f);
     Grid grid(sizeParticle, window.getSize());
