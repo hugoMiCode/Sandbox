@@ -4,6 +4,9 @@
 
 int main()
 {
+    std::cout << "test" << std::endl;
+
+
     srand(static_cast <unsigned> (time(0)));
 
     sf::RenderWindow window(sf::VideoMode(2560, 1080), "SFML works!");
