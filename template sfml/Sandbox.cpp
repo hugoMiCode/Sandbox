@@ -6,9 +6,9 @@ int main()
 {
     srand(static_cast <unsigned> (time(0)));
 
-    sf::RenderWindow window(sf::VideoMode(2560, 1080), "SFML works!");
+    sf::RenderWindow window(sf::VideoMode(2560, 1080), "SFML works!", sf::Style::Fullscreen);
 
-    sf::Vector2f sizeParticle(5.f, 5.f);
+    sf::Vector2f sizeParticle(3.f, 3.f);
     Grid grid(sizeParticle, window.getSize());
 
     int selector{ int(Type::Sand) };
